@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:ui_assingmnet/screens/account_info.dart';
 import 'package:ui_assingmnet/screens/homepage.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ui_assingmnet/screens/login_screen.dart';
 import 'package:ui_assingmnet/screens/my_assets.dart';
 import 'package:ui_assingmnet/screens/profile.dart';
+import 'package:ui_assingmnet/screens/sign_up.dart';
+import 'package:ui_assingmnet/screens/splash_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -50,7 +53,7 @@ class MyApp extends StatelessWidget {
               fontSize: 22),
         ),
       ),
-      home: const AccountInfo(),
+      home: const LoginPage(),
     );
   }
 }
