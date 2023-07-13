@@ -32,6 +32,7 @@ class MyApp extends StatelessWidget {
           onBackground: Color.fromRGBO(0, 0, 0, 1),
           surface: Color.fromRGBO(246, 246, 249, 1),
           onSurface: Color.fromRGBO(246, 246, 249, 1),
+          tertiary: Color.fromRGBO(130, 130, 130, 1),
         ),
         appBarTheme: const AppBarTheme(
           foregroundColor: Color.fromRGBO(0, 0, 0, 1),
@@ -53,7 +54,7 @@ class MyApp extends StatelessWidget {
               fontSize: 22),
         ),
       ),
-      home: const LoginPage(),
+      home: const SplashScreen(),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_assingmnet/screens/account_info.dart';
 import 'package:ui_assingmnet/screens/homepage.dart';
 
 class Profile extends StatefulWidget {
@@ -59,7 +60,6 @@ class _Profile extends State<Profile> {
                 child: Padding(
                   padding: const EdgeInsets.only(left: 20, right: 20),
                   child: Row(
-                    
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Image.asset(
@@ -116,6 +116,12 @@ class _Profile extends State<Profile> {
             Padding(
               padding: const EdgeInsets.only(top: 10, bottom: 10),
               child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => AccountInfo()),
+                  );
+                },
                 child: Container(
                   color: Theme.of(context).colorScheme.surface,
                   height: 60,
@@ -131,10 +137,15 @@ class _Profile extends State<Profile> {
                         ),
                         Text(
                           "Bank Account Info",
-                          style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                              fontSize: 17,
-                              fontWeight: FontWeight.w600,
-                              color: Theme.of(context).colorScheme.onSecondary),
+                          style: Theme.of(context)
+                              .textTheme
+                              .bodySmall
+                              ?.copyWith(
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.w600,
+                                  color: Theme.of(context)
+                                      .colorScheme
+                                      .onSecondary),
                         ),
                         Image.asset(
                           "assets/Vector 13.png",
