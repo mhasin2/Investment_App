@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
               fontSize: 22),
         ),
       ),
-      home: const HomePage(),
+      home: const AccountInfo(),
     );
   }
 }

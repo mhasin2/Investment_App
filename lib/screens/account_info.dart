@@ -29,57 +29,86 @@ class _AccountInfo extends State<AccountInfo> {
           children: [
             Container(
               color: Theme.of(context).colorScheme.background,
-              height: 60,
+              height: 111,
               child: Row(
+                
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Image.asset(
-                    "assets/contact.png",
-                    height: 24,
-                    width: 24,
+                    "assets/bankofamerica.png",
+                    height: 47,
+                    width: 47,
                   ),
-                  Text(
-                    "Contact Info",
-                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                        fontSize: 17,
-                        fontWeight: FontWeight.w600,
-                        color: Theme.of(context).colorScheme.onSecondary),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Bank of Amrica - 0182128xxx",
+                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                            fontSize: 17,
+                            fontWeight: FontWeight.w600,
+                            color: Theme.of(context).colorScheme.onSecondary),
+                      ),
+                      Text(
+                        "Jonas Macroni",
+                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                            color: Theme.of(context).colorScheme.onSecondary),
+                      ),
+                    ],
                   ),
                   Image.asset(
-                    "assets/Vector 13.png",
-                    height: 6,
-                    width: 14,
+                    "assets/Frame 3.png",
+                    height: 24,
+                    width: 24,
                   )
                 ],
               ),
             ),
             Container(
-              color: Theme.of(context).colorScheme.surface,
-              width: 354,
-              height: 60,
+              color: Theme.of(context).colorScheme.background,
+              height: 111,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Image.asset(
-                    "assets/Shape.png",
-                    height: 24,
-                    width: 24,
+                    "assets/zenith.png",
+                    height: 47,
+                    width: 47,
                   ),
-                  Text(
-                    "Source of Funding Info",
-                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                        fontSize: 17,
-                        fontWeight: FontWeight.w600,
-                        color: Theme.of(context).colorScheme.onSecondary),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Zenith Bank - 0182128xxx",
+                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                            fontSize: 17,
+                            fontWeight: FontWeight.w600,
+                            color: Theme.of(context).colorScheme.onSecondary),
+                      ),
+                      Text(
+                        "Jonas Macroni",
+                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                            color: Theme.of(context).colorScheme.onSecondary),
+                      ),
+                    ],
                   ),
                   Image.asset(
-                    "assets/Vector 13.png",
-                    height: 6,
-                    width: 14,
+                    "assets/Frame 3.png",
+                    height: 24,
+                    width: 24,
                   )
                 ],
               ),
             ),
+            Container(
+              child: Text("Add account",
+              style: Theme.of(context).textTheme.bodySmall,
+              ),
+            )
           ],
         ),
       ),
